@@ -1,0 +1,141 @@
+.section-contact {
+  padding: 4rem;
+  padding-bottom: 0;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.section-contact__info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.content-map {
+  width: 100%;
+  overflow: hidden;
+}
+.content-map img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.content-information {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.content-information__item .icons {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+.content-information__item .text-contact {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 700;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+.content-information__item .text-contact:hover {
+  text-decoration: underline;
+}
+
+
+/* Form */
+.section-form {
+  padding: 3rem;
+  max-width: calc(1300px - 10rem);
+  margin: 0 auto;
+  background-image: url(../../assets/background-geometry-max.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.section-form .subtitle {
+  color: #ffffffcb;
+}
+
+.form {
+  background-color: var(--color-background);
+  padding: 2rem;
+  box-shadow: 0 4px 4px #00000038;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.form__group {
+  display: flex;
+  gap: 1rem;
+}
+.form__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media (max-width: 1024px) {
+  .section-contact {
+    padding: 2rem;
+    text-align: center;
+  }
+  .section-contact__info {
+    grid-template-columns: 1fr;
+  }
+
+  .content-information {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .content-information__item .icons {
+    justify-content: center;
+  }
+  .content-information__item .icons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  .content-information__item .text-contact {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 700;
+    margin-left: 0;
+    text-decoration: none;
+  }
+
+  .content-map {
+    width: 100%;
+    overflow: hidden;
+  }
+  .content-map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .section-form {
+    padding: 1rem;
+  }
+  .section-form .subtitle {
+    text-align: center;
+  }
+  .form {
+    width: 100%;
+  }
+  .form__group {
+    flex-direction: column;
+  }
+  .form__item {
+    gap: 0.5rem;
+  }
+}

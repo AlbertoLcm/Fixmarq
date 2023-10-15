@@ -1,0 +1,145 @@
+.section-services {
+  padding: 4rem;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.section-services__content-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+.section-services__content-cards__card {
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem;
+  cursor: pointer;
+  gap: 1rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+  transition: box-shadow 0.25s, transform 0.25s;
+}
+.section-services__content-cards__card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #1e2225 10%, #1e222500 100%);
+  z-index: -1;
+}
+.section-services__content-cards__card a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+.section-services__content-cards__card:hover {
+  box-shadow: 0 5px 5px #00000034;
+}
+.section-services__content-cards__card:hover a {
+  text-decoration: underline;
+}
+.card-interiores {
+  background-image: url(../../assets/images/acabado-interiores.jpg);
+}
+.card-instalaciones {
+  background-image: url(../../assets/images/instalaciones.jpg);
+}
+.card-lavado {
+  background-image: url(../../assets/images/lavado.jpg);
+}
+
+
+.section-specialization {
+  background-color: var(--color-background-secondary);
+  max-width: 1400px;
+  margin: 5rem auto;
+  position: relative;
+}
+.section-specialization__description {
+  max-width: 60%;
+  position: relative;
+  padding: 7rem 5rem;
+  z-index: 1;
+}
+.section-specialization__description::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height: 100%;
+  background-image: url(../../assets/background-linear.svg);
+  z-index: -1;
+}
+.section-specialization__image {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 4rem;
+  width: 40%;
+  height: 130%;
+  overflow: hidden;
+  z-index: 3;
+}
+.section-specialization__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 1024px) {
+  .section-services {
+    padding: 3rem 2rem;
+  }
+  .section-services__content-cards__card {
+    height: 25rem;
+  }
+
+  .section-specialization {
+    margin: 0 auto;
+    position: relative;
+  }
+  .section-specialization__description {
+    max-width: 100%;
+    width: 100%;
+    padding: 2rem;
+    z-index: 1;
+  }
+  .section-specialization__description::before {
+    width: 100%;
+    height: 150%;
+  }
+
+  .section-specialization__image {
+    position: relative;
+    top: auto;
+    transform: none;
+    right: auto;
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 3;
+  }
+  .section-specialization__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}

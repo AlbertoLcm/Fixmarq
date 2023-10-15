@@ -1,0 +1,196 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #1E2225;
+
+  --color-background: #1E2225;
+  --color-background-secondary: #252A2E;
+  --color-red: #BF2518;
+  --text-primary: #ffffffe8;
+  --text-secondary: #ffffff8e;
+  --text-black: #000000cb;
+  --text-black-secondary: #0000008f;
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 6rem;
+  line-height: 1.1;
+  color: var(--text-primary);
+}
+h2 {
+  font-size: 2.25rem;
+  line-height: 1.1;
+  color: var(--text-primary);
+}
+h3 {
+  font-size: 1.7rem;
+  line-height: 1.1;
+  color: var(--text-primary);
+}
+h4 {
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  color: var(--text-primary);
+}
+h5 {
+  font-size: 1rem;
+  line-height: 1.1;
+  color: var(--text-primary);
+}
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+.subtitle-big {
+  font-size: 2.25rem;
+  line-height: 1.1;
+  color: var(--text-primary);
+}
+
+.description__paragraphs {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-left: 3rem;
+  margin-top: 2rem;
+}
+.description__paragraphs button {
+  width: max-content;
+}
+
+p {
+  color: var(--text-secondary);
+}
+
+.button {
+  border-radius: 30px;
+  border: 3px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  user-select: none;
+}
+.button-primary {
+  color: #FFF;
+  background-color: var(--color-red);
+}
+.button-secondary {
+  color: var(--text-black);
+  font-weight: 700;
+  background-color: #FFF;
+}
+.button-outline {
+  color: #FFF;
+  border-color: #FFF;
+  background-color: transparent;
+}
+button:active {
+  transform: scale(0.95);
+}
+
+input {
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.9em 1.1em;
+  font-size: 1em;
+  font-family: inherit;
+  color: inherit;
+  background-color: #f3f3f317;
+}
+textarea {
+  border-radius: 0.5rem;
+  border: none;
+  padding: 1em 1.2em;
+  font-size: 1em;
+  font-family: inherit;
+  color: inherit;
+  background-color: #f3f3f317;
+}
+
+.container-buttons {
+  display: flex;
+  gap: 1rem;
+}
+.container-title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  h3 {
+    text-align: center;
+    font-size: 1.25rem;
+  }
+  h4 {
+    text-align: center;
+    font-size: 1.25rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+  .subtitle {
+    font-size: 1.25rem;
+  }
+  .subtitle-big {
+    font-size: 1.5rem;
+  }
+
+  .container-title {
+    margin-bottom: 2rem;
+  }
+
+  .container-buttons {
+    flex-direction: column;
+    max-width: max-content;
+    margin: 0 auto;
+  }
+
+  .description__paragraphs {
+    margin-left: 0rem;
+    text-align: center;
+    align-items: center;
+  }
+  .description__paragraphs button {
+    width: max-content;
+  }
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
